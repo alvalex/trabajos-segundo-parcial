@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio Parciales</title>
+</head>
+<body>
+    <a href="index.html">Ir al Inicio</a> <br>
+    <script>
+        let par1=parseFloat(prompt("Escribe la calificacion del primer parcial:"));
+        let par2=parseFloat(prompt("Escribe la calificacion del segundo parcial:"));
+        let par3=parseFloat(prompt("Escribe la calificacion del tercer parcial:"));
+        let sum=par1+par2+par3;
+        let promedio=sum/3;
+
+        if (sum>=18) {
+            document.write("Promedio: " + promedio + "<br>Aprobaste");
+        } else {
+            document.write("Promedio: " + promedio + "<br>Reprobaste");
+        }
+    </script>
+</body>
+</html>

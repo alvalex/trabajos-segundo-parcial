@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de operaciones basicas</title>
+</head>
+<body>
+    <a href="index.html">Ir al Inicio</a> <br>
+    <script>
+    let operacion = parseInt(prompt("Elige una operacion: 1.-Suma 2.-Resta 3.-Multiplicacion 4.-Division"));
+    let num1 = parseFloat(prompt("escribe el primer numero"));
+    let num2 = parseFloat(prompt("escribe el ssegundo numero"));
+    let resultado;
+
+    switch (operacion) {
+        case 1:
+            resultado = num1 + num2;
+            document.write("resultado= "+ resultado);
+            break;
+        case 2:
+            resultado = num1 - num2;
+            document.write("resultado= "+ resultado);
+            break;
+        case 3:
+            resultado = num1 * num2;
+            document.write("resultado= "+ resultado);
+            break;
+        case 4:
+            if (num2 != 0) {
+                resultado = num1 / num2;
+                document.write("resultado= "+ resultado);
+            } else {
+                document.write("no se puede dividir entre 0");
+            }
+            break;
+        default:
+            document.write("Opcion no valida");
+            break;
+    }
+</script>
+</body>
+</html>
